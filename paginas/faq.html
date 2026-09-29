@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAQ | Minha Marcenaria</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            Minha Marcenaria
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="../index.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="ambientes.html">Ambientes</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+            <a href="faq.html">FAQ</a>
+            <a href="ajuda.html">Central de Ajuda</a>
+            <a href="materiais.html">Materiais</a>
+            <a href="pronta-entrega.html">Pronta Entrega</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- TOPO DA PÁGINA -->
+
+    <section class="pagina-topo">
+
+        <div class="pagina-topo-conteudo">
+
+            <p class="section-subtitle">
+                CENTRAL DE INFORMAÇÕES
+            </p>
+
+
+            <h1>
+                Perguntas
+                <span>frequentes.</span>
+            </h1>
+
+
+            <p>
+                Encontre respostas para as principais dúvidas sobre
+                nossos projetos, atendimento e serviços.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FAQ -->
+
+    <main>
+
+        <section class="faq-area">
+
+
+            <div class="section-header">
+
+                <p class="section-subtitle">
+                    FAQ
+                </p>
+
+
+                <h2>
+                    Tire suas
+                    <span>dúvidas.</span>
+                </h2>
+
+
+                <p>
+                    Reunimos algumas das perguntas mais frequentes
+                    para facilitar sua experiência conosco.
+                </p>
+
+            </div>
+
+
+
+            <div class="faq-list">
+
+
+                <details>
+
+                    <summary>
+                        Como funciona o orçamento?
+                    </summary>
+
+                    <p>
+                        Entre em contato conosco e apresente sua ideia.
+                        Nossa equipe irá entender suas necessidades,
+                        conhecer o ambiente e orientar sobre as próximas
+                        etapas do projeto.
+                    </p>
+
+                </details>
+
+
+
+                <details>
+
+                    <summary>
+                        Vocês fazem projetos personalizados?
+                    </summary>
+
+                    <p>
+                        Trabalhamos com diferentes ambientes planejados,
+                        como cozinhas, quartos, salas e escritórios,
+                        além de outras soluções personalizadas.
+                    </p>
+
+                </details>
+
+
+
+                <details id="entrega">
+    <summary>
+        Como funciona a entrega?
+    </summary>
+
+    <p>
+        Após a conclusão da produção, os móveis são
+        preparados para a entrega e passam por uma
+        conferência antes de serem encaminhados ao cliente.
+    </p>
+</details>
+
+
+                <details>
+
+                    <summary>
+                        Vocês realizam a montagem?
+                    </summary>
+
+                    <p>
+                        Sim. A montagem faz parte do processo de entrega
+                        do projeto, com os ajustes necessários para que
+                        o resultado final fique adequado ao ambiente.
+                    </p>
+
+                </details>
+
+
+
+                <details id="pos-venda">
+    <summary>
+        Existe atendimento após a entrega?
+    </summary>
+
+    <p>
+        Sim. Nosso relacionamento continua após a entrega.
+        O cliente pode entrar em contato para tirar dúvidas,
+        receber orientações e solicitar suporte quando necessário.
+    </p>
+</details>
+
+
+                <details>
+
+                    <summary>
+                        Como posso entrar em contato?
+                    </summary>
+
+                    <p>
+                        Você pode entrar em contato através da nossa
+                        página de contato e solicitar informações,
+                        atendimento ou orçamento.
+                    </p>
+
+                </details>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+
+        <div class="footer-content">
+
+
+            <div class="footer-logo">
+
+                Minha Marcenaria
+
+            </div>
+
+
+            <p>
+
+                Móveis planejados que transformam espaços
+                em ambientes únicos.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+
+            <p>
+
+                © 2026 Minha Marcenaria. Todos os direitos reservados.
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+    <!-- CHATBOT -->
+
+<button id="chatbotBotao" class="chatbot-botao" aria-label="Abrir atendimento">
+    <span>💬</span>
+    <small>Ajuda</small>
+</button>
+
+
+<div id="chatbot" class="chatbot">
+
+    <div class="chatbot-cabecalho">
+
+        <div>
+            <strong>Atendimento</strong>
+            <span>Minha Marcenaria</span>
+        </div>
+
+        <button id="chatbotFechar" class="chatbot-fechar" aria-label="Fechar">
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="chatbot-conteudo">
+
+        <div class="chatbot-mensagem" id="chatbotMensagem">
+            Olá! 👋<br><br>
+            Como podemos ajudar?
+        </div>
+
+
+        <div class="chatbot-respostas" id="chatbotRespostas">
+        </div>
+
+
+        <div class="chatbot-digitacao">
+
+            <input
+                type="text"
+                id="chatbotInput"
+                placeholder="Digite sua dúvida..."
+                autocomplete="off"
+            >
+
+            <button id="chatbotEnviar" aria-label="Enviar">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="../js/script.js"></script>
+
+
+</body>
+
+</html>

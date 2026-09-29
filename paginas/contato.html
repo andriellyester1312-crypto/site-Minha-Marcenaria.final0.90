@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contato | Minha Marcenaria</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Minha Marcenaria
+        </div>
+
+    <button class="menu-toggle">☰</button>
+        <nav>
+            
+            <a href="../index.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="ambientes.html">Ambientes</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+            <a href="faq.html">FAQ</a>
+            <a href="ajuda.html">Central de Ajuda</a>
+            <a href="materiais.html">Materiais</a>
+            <a href="pronta-entrega.html">Pronta Entrega</a>
+            
+        </nav>
+    </header>
+
+    <main>
+
+    <!-- TOPO -->
+    <section class="pagina-topo">
+        <div>
+            <p class="section-subtitle">FALE CONOSCO</p>
+
+            <h1>
+                Vamos transformar sua ideia em
+                <span>um projeto.</span>
+            </h1>
+
+            <p>
+                Conte um pouco sobre o ambiente que você deseja
+                transformar e entre em contato conosco para
+                solicitar um orçamento.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- CONTATO -->
+    <section class="contato-area">
+
+        <div class="contato-grid">
+
+            <!-- INFORMAÇÕES -->
+            <div class="contato-info">
+
+                <p class="section-subtitle">ENTRE EM CONTATO</p>
+
+                <h2>
+                    Seu próximo ambiente
+                    <span>começa aqui.</span>
+                </h2>
+
+                <p>
+                    Estamos prontos para entender suas necessidades
+                    e desenvolver uma solução personalizada para
+                    o seu espaço.
+                </p>
+
+                <div class="contato-dados">
+
+                    <div>
+                        <span>ATENDIMENTO</span>
+                        <strong>Segunda a sexta</strong>
+                        <p>08h às 18h</p>
+                    </div>
+
+                    <div>
+                        <span>WHATSAPP</span>
+                        <strong>Fale conosco</strong>
+                        <p>Solicite seu orçamento</p>
+                    </div>
+
+                    <div>
+                        <span>ORÇAMENTO</span>
+                        <strong>Projeto personalizado</strong>
+                        <p>Conte sua ideia para nós</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULÁRIO -->
+            <div class="contato-formulario">
+
+                <form novalidate>
+
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Seu nome"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="seuemail@email.com"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            placeholder="(00) 00000-0000"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="ambiente">Ambiente</label>
+
+                        <select id="ambiente" required>
+
+                            <option value="">
+                                Selecione o ambiente
+                            </option>
+
+                            <option value="Cozinha">
+                                Cozinha
+                            </option>
+
+                            <option value="Quarto">
+                                Quarto
+                            </option>
+
+                            <option value="Escritório">
+                                Escritório
+                            </option>
+
+                            <option value="Sala">
+                                Sala
+                            </option>
+
+                            <option value="Outro">
+                                Outro
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+
+                        <textarea
+                            id="mensagem"
+                            rows="5"
+                            placeholder="Conte um pouco sobre seu projeto..."
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <button type="submit" class="btn">
+                        Solicitar orçamento
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="contato-final">
+
+        <div>
+
+            <p class="section-subtitle">MÓVEIS PLANEJADOS</p>
+
+            <h2>
+                Pensado para você.
+                <span>Feito para o seu espaço.</span>
+            </h2>
+
+        </div>
+
+    </section>
+
+</main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                Minha Marcenaria
+
+            </div>
+            <p>Móveis planejados que tranformam espaços em ambientes únicos</p>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>  © 2026 NOME DA MARCENARIA. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+<!-- CHATBOT -->
+
+<button id="chatbotBotao" class="chatbot-botao" aria-label="Abrir atendimento">
+    <span>💬</span>
+    <small>Ajuda</small>
+</button>
+
+
+<div id="chatbot" class="chatbot">
+
+    <div class="chatbot-cabecalho">
+
+        <div>
+            <strong>Atendimento</strong>
+            <span>Minha Marcenaria</span>
+        </div>
+
+        <button id="chatbotFechar" class="chatbot-fechar" aria-label="Fechar">
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="chatbot-conteudo">
+
+        <div class="chatbot-mensagem" id="chatbotMensagem">
+            Olá! 👋<br><br>
+            Como podemos ajudar?
+        </div>
+
+
+        <div class="chatbot-respostas" id="chatbotRespostas">
+        </div>
+
+
+        <div class="chatbot-digitacao">
+
+            <input
+                type="text"
+                id="chatbotInput"
+                placeholder="Digite sua dúvida..."
+                autocomplete="off"
+            >
+
+            <button id="chatbotEnviar" aria-label="Enviar">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>

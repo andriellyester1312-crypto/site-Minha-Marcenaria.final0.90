@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Ajuda | Minha Marcenaria</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="../index.html">Minha Marcenaria</a>
+        </div>
+
+        <nav class="menu">
+            <a href="../index.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="ambientes.html">Ambientes</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+            <a href="faq.html">FAQ</a>
+            <a href="ajuda.html">Central de Ajuda</a>
+            <a href="materiais.html">Materiais</a>
+            <a href="pronta-entrega.html">Pronta Entrega</a>
+        </nav>
+    </header>
+
+    <section class="pagina-topo">
+        <p class="section-subtitle">SUPORTE</p>
+
+        <h1>Central de 
+            <span>ajuda.</span>
+        </h1>
+
+        <p>Encontre informações para facilitar sua experiência 
+            antes, durante e depois do seu projeto.
+        </p>
+    </section>
+    
+    <main>
+        <section class="ajuda-area">
+            <div class="section-header">
+                <p class="section-subtitle">Como podemos ajudar?</p>
+
+                <h2>Estamos aqui para 
+                    <span>você.</span>
+                </h2>
+
+                <p>Acesse uma das opções abaixo para encontrar 
+                    informações e orientações.
+                </p>
+            </div>
+
+        <div class="ajuda-grid">
+
+    <!-- PERGUNTAS FREQUENTES -->
+
+    <a href="faq.html" class="ajuda-card">
+
+        <span class="ajuda-icone">?</span>
+
+        <h3>Perguntas frequentes</h3>
+
+        <p>
+            Consulte respostas para as dúvidas mais comuns
+            sobre nossos projetos e serviços.
+        </p>
+
+        <span class="ajuda-link">
+            Ver perguntas →
+        </span>
+
+    </a>
+
+
+    <!-- ATENDIMENTO -->
+
+    <a href="#" class="ajuda-card" id="abrirChatbotAjuda">
+
+        <span class="ajuda-icone">💬</span>
+
+        <h3>Atendimento</h3>
+
+        <p>
+            Entre em contato conosco para tirar dúvidas,
+            solicitar informações ou iniciar seu projeto.
+        </p>
+
+        <span class="ajuda-link">
+            Falar com atendimento →
+        </span>
+
+    </a>
+
+
+    <!-- ENTREGA E MONTAGEM -->
+
+    <a href="faq.html#entrega" class="ajuda-card">
+
+        <span class="ajuda-icone">📦</span>
+
+        <h3>Entrega e montagem</h3>
+
+        <p>
+            Saiba mais sobre os cuidados envolvidos
+            na entrega e montagem dos móveis.
+        </p>
+
+        <span class="ajuda-link">
+            Saiba mais →
+        </span>
+
+    </a>
+
+
+    <!-- PÓS-VENDA -->
+
+    <a href="faq.html#pos-venda" class="ajuda-card">
+
+        <span class="ajuda-icone">🔧</span>
+
+        <h3>Pós-venda</h3>
+
+        <p>
+            Continue contando conosco depois da entrega
+            para orientações e suporte.
+        </p>
+
+        <span class="ajuda-link">
+            Conhecer suporte →
+        </span>
+
+    </a>
+
+</div>
+
+        </section>
+
+        <section class="ajuda-suporte">
+
+            <div>
+
+                <p class="section-subtitle">PRECISA DE MAIS AJUDA?</p>
+
+                <h2>
+                    Fale diretamente
+                    <span>conosco.</span>
+                </h2>
+
+                <p>
+                    Nossa equipe está disponível para entender sua
+                    necessidade e encontrar a melhor forma de ajudar.
+                </p>
+
+                <a href="contato.html" class="btn">
+                    Entrar em contato
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+   <footer>
+        <div class="footer-contet">
+            <div class="foote-logo">
+                Minha Marcenaria
+            </div>
+            <p>Móveis planejados que transformam espaços em ambientes únicos.</p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 NOME DA MARCENARIA. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- CHATBOT -->
+
+<button id="chatbotBotao" class="chatbot-botao" aria-label="Abrir atendimento">
+    <span>💬</span>
+    <small>Ajuda</small>
+</button>
+
+
+<div id="chatbot" class="chatbot">
+
+    <div class="chatbot-cabecalho">
+
+        <div>
+            <strong>Atendimento</strong>
+            <span>Minha Marcenaria</span>
+        </div>
+
+        <button id="chatbotFechar" class="chatbot-fechar" aria-label="Fechar">
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="chatbot-conteudo">
+
+        <div class="chatbot-mensagem" id="chatbotMensagem">
+            Olá! 👋<br><br>
+            Como podemos ajudar?
+        </div>
+
+
+        <div class="chatbot-respostas" id="chatbotRespostas">
+        </div>
+
+
+        <div class="chatbot-digitacao">
+
+            <input
+                type="text"
+                id="chatbotInput"
+                placeholder="Digite sua dúvida..."
+                autocomplete="off"
+            >
+
+            <button id="chatbotEnviar" aria-label="Enviar">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="../js/script.js"></script>
+
+    
+</body>
+</html>
